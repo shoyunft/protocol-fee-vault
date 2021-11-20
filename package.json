@@ -1,16 +1,16 @@
 {
-  "name": "hardhat-foundation",
-  "description": "Hardhat foundation",
+  "name": "@shoyunft/protocol-fee-vault",
+  "description": "Shoyu Protocol Fee Vault",
   "keywords": [
     "hardhat"
   ],
-  "homepage": "https://github.com/sushiswap/hardhat-foundation#readme",
+  "homepage": "https://github.com/shoyunft/protocol-fee-vault/#readme",
   "bugs": {
-    "url": "https://github.com/sushiswap/hardhat-foundation/issues",
-    "email": "bugs@sushi.com"
+    "url": "https://github.com/shoyunft/protocol-fee-vault/issues",
+    "email": "security@shoyunft.com"
   },
   "license": "MIT",
-  "author": "Matthew Lilley <hello@matthewlilley.com>",
+  "author": "LevX <team@levx.io>",
   "scripts": {
     "build": "hardhat compile",
     "console": "hardhat console",
@@ -88,5 +88,8 @@
     "ts-node": "^10.0.0",
     "typechain": "^5.0.0",
     "typescript": "^4.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3"
   }
 }

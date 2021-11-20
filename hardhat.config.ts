@@ -14,11 +14,7 @@ import { HardhatUserConfig, task } from "hardhat/config";
 
 import { removeConsoleLog } from "hardhat-preprocessor";
 
-const accounts = {
-  mnemonic:
-    process.env.MNEMONIC ||
-    "test test test test test test test test test test test junk",
-};
+const accounts = [process.env.PRIVATE_KEY];
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -163,7 +159,7 @@ const config: HardhatUserConfig = {
     ),
   },
   solidity: {
-    version: "0.6.12",
+    version: "0.8.3",
     settings: {
       optimizer: {
         enabled: true,
